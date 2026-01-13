@@ -15,8 +15,9 @@ All projects are briefly summarised below.
 
 
 
-The Deep Reinforcement Learning's certificate can be found [here](udacity_drl_cerificate.pdf).
+The Deep Reinforcement Learning's certificate can be found [here](https://www.udacity.com/certificate/e/ce256ac8-6217-11ef-bf01-2736b84dc3f4).
 
+<img src="pictures/drl_udacity_certificate.png" width="500"/>
 
 ---
 
