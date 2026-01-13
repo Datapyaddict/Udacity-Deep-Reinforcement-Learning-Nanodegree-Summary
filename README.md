@@ -1,35 +1,53 @@
-# Udacity's Data Engineering nanodegree
-******
+# Udacity - Deep Reinforcement Learning Nanodegree
 
-Hi all,
-I'm pleased to share with you my latest accomplishment : the __Udacity's Data Engineering nanodegree__.
-Throughout the programme, I enjoyed leaning the skills and knowledge to design, build, maintain, and troubleshoot data pipelines. I also learned a lot from __AWS cloud computing and storing__ capabilities.   
-All the 6 projects are detailled below.  
-The __capstone project__ was the most exciting as it allows to build a large __data lake__ that combines __stock markets__ and __financial tweets__. It's a huge project that involves collecting, storing, processing, and analyzing large datasets.  
-I also implemented this pipeline for my own interests as I will be using the data lake to perform __sentiment analysis__ on financial tweets and news as an enthusiast __data scientist__.  
+Hi all,  
 
-***
-The Data Engineer's certificate can be found [here](udacity_data_engineer_cerificate.pdf).
-******
-Nanodegree's projects:
+I am pleased to share my work from the **Udacity Deep Reinforcement Learning Nanodegree**.
 
-*click on the below links to deep dive into the projects*.
+Throughout this programme, I designed, implemented, and evaluated several reinforcement learning agents across **three** progressively more complex settings: 
+- **single-agent discrete control**, 
+- **multi-agent continuous control** with distributed training, 
+- and **cooperative multi-agent learning** using **centralised training with decentralised execution** in the **Unity ML-Agents** environment. 
 
-1. [Capstone project](https://github.com/Datapyaddict/udacity-project-data-engineer-capstone-project)  
-	> In this project, I'm building a pipeline that could fetch automatically stock markets' data from yahoo finance and financial tweets from Twitter via respective APIs on a scheduled basis, retreat them accordingly to fit in a relational data model and dump the final data back into a data lake as `parquet` files.
+These projects together demonstrate the progression from **value-based methods** to advanced **policy-gradient** and **multi-agent** learning systems, with a strong emphasis on training stability, evaluation rigour, and reproducibility.
 
-2. [Automate a data pipeline with Airflow](https://github.com/Datapyaddict/udacity-project-automate-data-pipeline-with-airflow)  
-	> In this project, I'm buiding a data pipeline with `Apache Airflow` to meet the requirements defined by a fictitious company __Sparkify__ and I'm making use of `AWS EMR` and `s3` bucket capabilities.    
-	
-3. [Set up a data lake with Spark](https://github.com/Datapyaddict/udacity-project-data-set-up-a-data-lake-with-spark).  
-	> The purpose of this project was to build a pipeline using `Spark`, `python` and `AWS EMR` and `S3` capabilities.  
-	
-4. [Set up a Datawarehouse](https://github.com/Datapyaddict/udacity-project-data-warehouse).  
-	> The purpose of this project is to build a datawarehouse with `AWS Redshift`.  
+All projects are briefly summarised below.
 
-5. [Data modelling with Apache Cassandra](https://github.com/Datapyaddict/udacity-project-data-modeling-with-cassandra).  
-	> The purpose of this project is to model the data by creating tables in `Apache Cassandra` Nosql tool to run queries in order to answer specific questions.  
-	This is done through a jupyter notebook.  
-6. [Data modelling with Postgres](https://github.com/Datapyaddict/udacity-project-data-modeling-with-postgres)
-	> Sparkify, a fictitious startup, wants its analytics team to analyse the data collected on songs and user activity from its music streaming app.  
-	The purpose of this project is implement a pipeline in python in order to extract, transform and load the information from JSON files into a `Apache Postgre` database and implement some analytics.
+
+
+The Data Engineer's certificate can be found [here](udacity_drl_cerificate.pdf).
+
+
+---
+
+## 🧠 Nanodegree Projects
+
+_Click the links below to explore each project in detail._
+
+### 1. **Navigation — Banana Collector (Double DQN)**
+
+In this project, I solved the Unity **Banana Collector** environment using a **Double Deep Q-Network**.  
+The agent learns to collect yellow bananas while avoiding blue bananas in a discrete action space.  
+The learning process uses experience replay, target networks, ε-greedy exploration, Huber loss, and gradient clipping for stability.  
+The environment was solved in **785 episodes**, exceeding Udacity’s performance benchmark. :contentReference[oaicite:3]{index=3}
+
+---
+
+### 2. **Continuous Control — Reacher (DDPG, 20 Agents)**
+
+This project addresses the Unity **Reacher** environment with **20 parallel agents** using **Deep Deterministic Policy Gradient (DDPG)**.  
+All agents share a common actor and critic and contribute experience to a shared replay buffer, forming a distributed training setup.  
+The task was solved in **100 episodes**, well below the required 163 episodes, with highly stable performance and strong final evaluation. :contentReference[oaicite:4]{index=4}
+
+---
+
+### 3. **Multi-Agent Collaboration — Tennis (MADDPG)**
+
+In this project, I implemented a **Multi-Agent DDPG (MADDPG)** solution for the Unity **Tennis** environment.  
+The two agents learn cooperatively using **centralised training with decentralised execution**, a shared actor, and a central critic.  
+A shaped **team reward** was introduced to encourage cooperation, while evaluation and early stopping remained based on the raw environment rewards.  
+The environment was solved in **1136 episodes**, significantly outperforming Udacity’s reference solution. :contentReference[oaicite:5]{index=5}
+
+---
+
+
