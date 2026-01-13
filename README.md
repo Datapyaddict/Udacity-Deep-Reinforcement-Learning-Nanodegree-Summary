@@ -24,7 +24,7 @@ The Deep Reinforcement Learning's certificate can be found [here](udacity_drl_ce
 
 _Click the links below to explore each project in detail._
 
-### 1. [Navigation — Banana Collector (Double DQN)](https://github.com/Datapyaddict/udacity-project-solving-banana-collector-unity-environment)
+### 1. [Navigation - Banana Collector (Double DQN)](https://github.com/Datapyaddict/udacity-project-solving-banana-collector-unity-environment)
 
 In this project, I solved the Unity **Banana Collector** environment using a **Double Deep Q-Network**.  
 The agent learns to collect yellow bananas while avoiding blue bananas in a discrete action space.  
@@ -33,7 +33,7 @@ The environment was solved in **785 episodes**, exceeding Udacity’s performanc
 
 ---
 
-### 2. [Continuous Control — Reacher (DDPG, 20 Agents)](https://github.com/Datapyaddict/udacity-project-solving-reacher-unity-environment-20-agents)
+### 2. [Continuous Control - Reacher (DDPG, 20 Agents)](https://github.com/Datapyaddict/udacity-project-solving-reacher-unity-environment-20-agents)
 
 This project addresses the Unity **Reacher** environment with **20 parallel agents** using **Deep Deterministic Policy Gradient (DDPG)**.  
 All agents share a common actor and critic and contribute experience to a shared replay buffer, forming a distributed training setup.  
@@ -41,7 +41,7 @@ The task was solved in **100 episodes**, well below the required 163 episodes, w
 
 ---
 
-### 3. [Multi-Agent Collaboration — Tennis (MADDPG)](https://github.com/Datapyaddict/udacity-project-solving-multi-agent-tennis-unity-environment)
+### 3. [Multi-Agent Collaboration - Tennis (MADDPG)](https://github.com/Datapyaddict/udacity-project-solving-multi-agent-tennis-unity-environment)
 
 In this project, I implemented a **Multi-Agent DDPG (MADDPG)** solution for the Unity **Tennis** environment.  
 The two agents learn cooperatively using **centralised training with decentralised execution**, a shared actor, and a central critic.  
