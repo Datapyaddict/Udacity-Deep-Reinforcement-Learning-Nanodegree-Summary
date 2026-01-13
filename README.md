@@ -15,7 +15,7 @@ All projects are briefly summarised below.
 
 
 
-The Data Engineer's certificate can be found [here](udacity_drl_cerificate.pdf).
+The Deep Reinforcement Learning's certificate can be found [here](udacity_drl_cerificate.pdf).
 
 
 ---
